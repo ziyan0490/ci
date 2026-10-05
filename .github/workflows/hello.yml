@@ -1,0 +1,17 @@
+name: hello ci
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print a message
+      - run: echo "hello from github actions"
+
+ 
